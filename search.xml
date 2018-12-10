@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[yum命令详解]]></title>
+    <url>%2F2018%2F03%2F16%2Flinux-yum%2F</url>
+    <content type="text"><![CDATA[&ensp;&ensp;&ensp;&ensp;yum(全称为Yellow dog Update Modified)是一个在Fedora和RedHat以及SUSE中的shell前端软件包管理器，基于RPM包管理，能够从指定的服务器自动下载RPM包并且安装，可以自动处理依赖性关系，并且一次安装所有依赖的软件包，无须繁琐地一次次下载、安装。 yum命令形式yum [options] [command] [packages...] &ensp;&ensp;&ensp;&ensp;其中[options]是可选的，包括-h(帮助)，-y(当安装过程中提示选择时全为”yes”)，-q(不显示安装的过程)等等。[command]为所要进行的操作，[package…]是操作的对象。 yum特点 可以同时配置多个资源库(Repository) 简洁的配置文件(/etc/yum.conf) 自动解决增加或删除rpm包时遇到的依赖性问题 保持与RPM数据库的一致性 yum命令详解yum check-update #列出所有可更新的软件清单 yum update #安装所有更新软件 yum install #仅安装指定的文件 yum update #仅更新指定的软件 yum list #列出所有可更新的软件清单 yum remove #删除软件包 yum makecache命令&emsp;&emsp;yum makecache就是把服务器的包信息下载到本地电脑缓存起来。不用上网检索就能查找软件信息。]]></content>
+      <categories>
+        <category>yum命令</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>centos</tag>
+        <tag>command</tag>
+        <tag>yum</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux_nginx]]></title>
+    <url>%2F2018%2F03%2F15%2Flinux-nginx%2F</url>
+    <content type="text"><![CDATA[&ensp;&ensp;&ensp;&ensp;在centos6.5系统中安装nginx服务器,nginx是跟以往的代理服务器不一样，它是一个反向代理服务器，用户不知道真实访问的是哪一台服务器。 方法一(使用yum直接安装)配置nginx放入yum repo库中1234567891.移动到/etc/yum.repos.d下cd /etc/yum.repos.d2.新建文件nginx.repo并添加以下内容vi nginx.repo[nginx]name=nginx repobaseurl=http://nginx.org/packages/centos/6/$basearch/gpgcheck=0enabled=1 从远程服务器中下载包信息缓存到本地yum makecache 安装nginx12yum info nginxyum install nginx 方法二(通过手动下载安装包解压安装)移动到/usr/local文件夹下，下载nginx包12cd /usr/localwget http://nginx.org/download/nginx-1.12.2.tar.gz 如果出现上图的错误，安装wget包(yum install wget) 解压nginx包1tar -zxvf nginx-1.12.2.tar.gz 源码的安装一般分为configure(配置)，make(编译)，make install(安装)移动到/usr/local/nginx-1.12.2文件夹下，执行./configure123mkdir /usr/local/nginx./configure --prefix=/usr/local/nginx如果不加--prefix=/usr/local/nginx，安装可能会在/usr/local/nginx,或者在/usr/local/bin下 &emsp;&emsp;错误信息1：缺少gcc-c++编译器 &emsp;&emsp;错误信息2：缺少依赖的pcre和zlib包1http://blog.csdn.net/hybaym/article/details/50929958 编译和安装12makemake install 移动到/usr/local/nginx/sbin下，启动nginx1234cd /usr/local/nginx/sbinnginx # 启动nginxnginx -s stop # 停止nginxnginx -s reload # 重启nginx 本地访问nginx&emsp;&emsp;启动nginx后直接通过地址访问127.0.0.1:80,因为浏览器的端口默认是80，所以可以直接输入127.0.0.1 外部访问nginx方法1(开放端口)123/sbin/iptables -I INPUT -p tcp --dport 端口号 -j ACCEPT # 开放端口/etc/rc.d/init.d/iptables save # 修改生效/etc/init.d/iptables status # 查看配置 方法2(关闭防火墙)1234service iptables stop # 关闭防火墙服务service ip6tables stop # 关闭防火墙服务chkconfig iptables off # 关闭随系统启动而启动chkconfig ip6tables off # 关闭随系统启动而启动 访问成功会出现一下页面]]></content>
+      <categories>
+        <category>nginx安装</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>command</tag>
+        <tag>nginx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo搭建搜索功能]]></title>
+    <url>%2F2018%2F03%2F15%2Fhexo-search%2F</url>
+    <content type="text"><![CDATA[&ensp;&ensp;&ensp;&ensp;搜索功能作用于大量文本的时候，能快速精确到需要查找的内容，这个主要是hexo自带搜索服务。 安装插件npm install hexo-generator-searchdb --save 修改站点配置文件(_config.yml)12345search: path: search.xml field: post format: html limit: 10000 修改主题配置文件(_config.yml)12local_search: enable: true]]></content>
+      <categories>
+        <category>hexo+next搭建博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+        <tag>search</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[first_blog]]></title>
+    <url>%2F2018%2F03%2F14%2Ffirst-blog%2F</url>
+    <content type="text"><![CDATA[使用hexo和github来搭建blog]]></content>
+      <categories>
+        <category>hexo+next搭建博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+</search>
