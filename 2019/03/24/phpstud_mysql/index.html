@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="phpstudy,MySQL," />
 
 
 
@@ -79,17 +79,24 @@
 
 
 
-<meta name="description" content="流线的身体,顶着一个大西瓜">
-<meta property="og:type" content="website">
-<meta property="og:title" content="思维整理">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;一般从phpstudy官网下载的php集成环境包含的mysql是5.5版本的，对于现在来说是比较低的版本，所以需要将其升级到高版本（5.7）。">
+<meta name="keywords" content="phpstudy,MySQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="phpstudy升级MySQL数据库">
+<meta property="og:url" content="http://yoursite.com/2019/03/24/phpstud_mysql/index.html">
 <meta property="og:site_name" content="thinking in heart">
-<meta property="og:description" content="流线的身体,顶着一个大西瓜">
+<meta property="og:description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;一般从phpstudy官网下载的php集成环境包含的mysql是5.5版本的，对于现在来说是比较低的版本，所以需要将其升级到高版本（5.7）。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-15T02:57:42.000Z">
+<meta property="og:image" content="http://yoursite.com/images/mysql_download1.png">
+<meta property="og:image" content="http://yoursite.com/images/mysql_download2.png">
+<meta property="og:image" content="http://yoursite.com/images/mysql_download3.png">
+<meta property="og:image" content="http://yoursite.com/images/phpstudy1.png">
+<meta property="og:image" content="http://yoursite.com/images/phpstudy2.png">
+<meta property="og:updated_time" content="2019-03-24T15:08:20.002Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="思维整理">
-<meta name="twitter:description" content="流线的身体,顶着一个大西瓜">
+<meta name="twitter:title" content="phpstudy升级MySQL数据库">
+<meta name="twitter:description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;一般从phpstudy官网下载的php集成环境包含的mysql是5.5版本的，对于现在来说是比较低的版本，所以需要将其升级到高版本（5.7）。">
+<meta name="twitter:image" content="http://yoursite.com/images/mysql_download1.png">
 
 
 
@@ -119,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/03/24/phpstud_mysql/"/>
 
 
 
 
 
-  <title>思维整理 | thinking in heart</title>
+  <title>phpstudy升级MySQL数据库 | thinking in heart</title>
   
 
 
@@ -278,40 +285,201 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/24/phpstud_mysql/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="rebootdd">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/blog-logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thinking in heart">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">思维整理</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 4 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo-next搭建博客/">hexo+next搭建博客</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/nginx安装/">nginx安装</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/phpstudy/">phpstudy</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/yum命令/">yum命令</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">phpstudy升级MySQL数据库</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-24T21:37:18+08:00">
+                2019-03-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/phpstudy/" itemprop="url" rel="index">
+                    <span itemprop="name">phpstudy</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>&ensp;&ensp;&ensp;&ensp;一般从<a href="http://phpstudy.php.cn/" target="_blank" rel="noopener">phpstudy官网</a>下载的php集成环境包含的mysql是5.5版本的，对于现在来说是比较低的版本，所以需要将其升级到高版本（5.7）。<br><a id="more"></a></p>
+<h3 id="MySQL下载"><a href="#MySQL下载" class="headerlink" title="MySQL下载"></a><a href="https://dev.mysql.com/" target="_blank" rel="noopener">MySQL下载</a></h3><ol>
+<li>mysql下载页面<br><img src="/images/mysql_download1.png" alt=""></li>
+<li>mysql以往版本选择<br><img src="/images/mysql_download2.png" alt=""></li>
+<li>mysql版本选择（选择免安装版本）<br><img src="/images/mysql_download3.png" alt=""></li>
+</ol>
+<h3 id="MySQL文件夹替换"><a href="#MySQL文件夹替换" class="headerlink" title="MySQL文件夹替换"></a>MySQL文件夹替换</h3><ol>
+<li>找到phpstudy目录，将原来的MySQL文件夹重新命名成MySQL_bak<br><img src="/images/phpstudy1.png" alt=""></li>
+<li>将下载好的MySQL的zip压缩包解压到原MySQL目录并命令为MySQL<br><img src="/images/phpstudy2.png" alt=""></li>
+<li>如果MySQL配置了环境变量，先将环境变量移除</li>
+<li><p>如果MySQL配置了服务信息，卸载服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld remove</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>从原来的MySQL安装目录下，复制一份my.ini/my.cnf到新版本MySQL的bin目录下，修改一些配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">[client]</span><br><span class="line">port=3306</span><br><span class="line">[mysql]</span><br><span class="line">default-character-set=utf8</span><br><span class="line">[mysqld]</span><br><span class="line">port=3306</span><br><span class="line">basedir=&quot;D:/not_install_software/phptool/PHPTutorial/MySQL/&quot;</span><br><span class="line">datadir=&quot;D:/not_install_software/phptool/PHPTutorial/MySQL/data/&quot;</span><br><span class="line">character-set-server=utf8</span><br><span class="line">default-storage-engine=INNODB</span><br><span class="line">#支持 INNODB 引擎模式。修改为　default-storage-engine=INNODB　即可。</span><br><span class="line">#如果 INNODB 模式如果不能启动，删除data目录下ib开头的日志文件重新启动。</span><br><span class="line">sql-mode=&quot;NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION&quot;</span><br><span class="line">max_connections=512</span><br><span class="line">query_cache_size=0</span><br><span class="line">table_cache=256</span><br><span class="line">tmp_table_size=18M</span><br><span class="line">thread_cache_size=8</span><br><span class="line">myisam_max_sort_file_size=64G</span><br><span class="line">myisam_sort_buffer_size=35M</span><br><span class="line">key_buffer_size=25M</span><br><span class="line">read_buffer_size=64K</span><br><span class="line">read_rnd_buffer_size=256K</span><br><span class="line">sort_buffer_size=256K</span><br><span class="line">innodb_additional_mem_pool_size=2M</span><br><span class="line">innodb_flush_log_at_trx_commit=1</span><br><span class="line">innodb_log_buffer_size=1M</span><br><span class="line">innodb_buffer_pool_size=47M</span><br><span class="line">innodb_log_file_size=24M</span><br><span class="line">innodb_thread_concurrency=8</span><br><span class="line">#新加</span><br><span class="line">innodb_file_per_table = 1</span><br><span class="line">skip-grant-tables = 1 #跳过权限验证</span><br><span class="line">log-error = D:/not_install_software/phptool/PHPTutorial/MySQL/data/error.log</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>以管理员身份运行cmd，进入到新MySQL安装bin目录()</p>
+<ul>
+<li><p>初始化MySQL(执行这一步会在目录下生成一个data文件夹)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize-insecure --user = mysql</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装MySQL服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysqld -install            #安装mysql服务</span><br><span class="line">net start mysql            #启动mysql服务</span><br><span class="line">net stop mysql             #停止mysql服务</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>登陆MySQL并修改密码，直接回车</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p               #登陆MySQL数据库</span><br><span class="line">mysql&gt;update mysql.user set authentication_string=password(&apos;root&apos;) where user=&apos;root&apos; and Host =&apos;localhost&apos;;     #修改MySQL密码</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h3><ol>
+<li>phpstudy启动不了(删除mysql服务，只留mysqla服务)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sc delete mysql               #bin目录下执行</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/phpstudy/" rel="tag"><i class="fa fa-tag"></i> phpstudy</a>
+          
+            <a href="/tags/MySQL/" rel="tag"><i class="fa fa-tag"></i> MySQL</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/16/linux-yum/" rel="next" title="yum命令详解">
+                <i class="fa fa-chevron-left"></i> yum命令详解
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -344,8 +512,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -419,6 +596,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL下载"><span class="nav-number">1.</span> <span class="nav-text">MySQL下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL文件夹替换"><span class="nav-number">2.</span> <span class="nav-text">MySQL文件夹替换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题解决"><span class="nav-number">3.</span> <span class="nav-text">问题解决</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
