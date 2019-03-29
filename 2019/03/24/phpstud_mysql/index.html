@@ -92,7 +92,8 @@
 <meta property="og:image" content="http://yoursite.com/images/mysql_download3.png">
 <meta property="og:image" content="http://yoursite.com/images/phpstudy1.png">
 <meta property="og:image" content="http://yoursite.com/images/phpstudy2.png">
-<meta property="og:updated_time" content="2019-03-24T15:08:20.002Z">
+<meta property="og:image" content="http://yoursite.com/images/phpstudy3.png">
+<meta property="og:updated_time" content="2019-03-29T14:00:02.835Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="phpstudy升级MySQL数据库">
 <meta name="twitter:description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;一般从phpstudy官网下载的php集成环境包含的mysql是5.5版本的，对于现在来说是比较低的版本，所以需要将其升级到高版本（5.7）。">
@@ -417,9 +418,14 @@
 </li>
 </ol>
 <h3 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h3><ol>
-<li>phpstudy启动不了(删除mysql服务，只留mysqla服务)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sc delete mysql               #bin目录下执行</span><br></pre></td></tr></table></figure>
+<li><p>phpstudy启动不了(删除mysql服务，只留mysqla服务)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sc delete mysql               #bin目录下执行</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>mysql服务启动不了<br><img src="/images/phpstudy3.png" alt=""><br>解决方法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize-insecure --user=mysql</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
+<p>&ensp;&ensp;&ensp;&ensp;mysql5.7免安装版没有data目录，通过以上命令生成后再启动MySQL服务就ok了。</p>
 
       
     </div>
